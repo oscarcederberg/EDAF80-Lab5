@@ -39,7 +39,7 @@ parametric_shapes::createRandomQuad(float const width, float const height,
 		for (unsigned int j = 0u; j < vertical_slice_vertices_count; ++j) {
 			vertices[index] = glm::vec3(
 				start_x + static_cast<float>(i)*delta_x, 
-				(static_cast<float>((rand() % 100)) / 100.0) * (2*max_random) - max_random, 
+				(static_cast<float>((rand() % 100)) / 100.0f) * (2*max_random) - max_random, 
 				start_z + static_cast<float>(j)*delta_z);
 			texcoords[index] = glm::vec3(
 				static_cast<float>(i)/static_cast<float>(horizontal_slice_vertices_count), 
